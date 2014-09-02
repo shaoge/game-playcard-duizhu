@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ClassDiagram>
+    <CommunicationClass name="com.formum.duizhu.cardDeck.card.ICard"
+        x="433" y="278"/>
+    <CommunicationClass name="com.formum.duizhu.player.AIPlay" x="166" y="390">
+        <Extension destinationClassName="com.formum.duizhu.player.IPlayer"/>
+        <Association
+            destinationClassName="com.formum.duizhu.player.playerCardDeck.IPlayerCardDeck"
+            endpointName="myPlayerCardDeck" kind="Simple"/>
+        <Association destinationClassName="com.formum.duizhu.util.IUtil"
+            endpointName="tools" kind="Simple"/>
+        <Communication destinationClassName="com.formum.duizhu.player.RobotPlayer"/>
+        <Communication destinationClassName="com.formum.duizhu.player.playerCardDeck.IPlayerCardDeck"/>
+    </CommunicationClass>
+    <CommunicationClass name="com.formum.duizhu.player.IPlayer" x="568" y="386"/>
+    <CommunicationClass name="com.formum.duizhu.cardDeck.ICardDeck"
+        x="90" y="302"/>
+    <CommunicationClass name="com.formum.duizhu.player.RobotPlayer"
+        x="360" y="520">
+        <Communication destinationClassName="com.formum.duizhu.player.IPlayer"/>
+    </CommunicationClass>
+    <CommunicationClass name="com.formum.duizhu.MainActivity" x="364" y="100">
+        <Association
+            destinationClassName="com.formum.duizhu.cardDeck.ICardDeck"
+            endpointName="cd" kind="Simple"/>
+        <Communication destinationClassName="com.formum.duizhu.cardDeck.card.ICard"/>
+        <Communication destinationClassName="com.formum.duizhu.player.IPlayer"/>
+        <Communication destinationClassName="com.formum.duizhu.cardDeck.ICardDeck"/>
+        <Communication destinationClassName="com.formum.duizhu.player.RobotPlayer"/>
+        <Communication destinationClassName="com.formum.duizhu.player.HumanPlayer"/>
+        <Communication destinationClassName="com.formum.duizhu.util.IUtil"/>
+    </CommunicationClass>
+    <CommunicationClass name="com.formum.duizhu.player.HumanPlayer"
+        x="562" y="103"/>
+    <CommunicationClass
+        name="com.formum.duizhu.player.playerCardDeck.IPlayerCardDeck"
+        x="137" y="557"/>
+    <CommunicationClass name="com.formum.duizhu.util.IUtil" x="89" y="94"/>
+    <Note x="203" y="138">加入两个</Note>
+</ClassDiagram>

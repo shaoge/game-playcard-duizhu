@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">duizhu</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    
+    <string name="current_class">当前主打： </string>
+    <string name="current_suit">主牌花色：</string>
+    <string name="banker">庄家:</string>
+    <string name="player_score">闲家分数:</string>
+    <string name="end">不玩了</string>
+    <string name="showBabiesForGrandMa">双双</string>
+
+    
+
+</resources>

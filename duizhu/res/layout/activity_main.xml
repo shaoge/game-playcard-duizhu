@@ -1,0 +1,160 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#A2CD5A"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <LinearLayout
+        android:id="@+id/info_end_bar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:gravity="fill"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9" >
+
+            <TextView
+                android:id="@+id/current_class"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="22sp" />
+            <TextView
+                android:id="@+id/banker"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="22sp" />
+            <TextView
+                android:id="@+id/current_suit_begin"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="22sp" />
+            <ImageView 
+                android:id="@+id/suit_image"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                />
+             <TextView
+                android:id="@+id/current_suit_end"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="22sp" />
+            <TextView
+                android:id="@+id/player_score"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="22sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_horizontal" >
+
+            <Button
+                android:id="@+id/end"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FF0000"
+                android:onClick="onImageClicked"
+                android:text="@string/end"
+                android:visibility="visible" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/top"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4"
+        android:background="#A2CD5A"
+        android:baselineAligned="false"
+        android:gravity="center"
+        android:orientation="horizontal" >
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/center"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:background="#A2CD5A"
+        android:baselineAligned="false"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/center_robot"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/center_human"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/my_side"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="25dp"
+        android:layout_weight="4"
+        android:background="#A2CD5A"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/readyOutCards"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="left"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#A2CD5A"
+            android:gravity="right"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/my_banker_info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:baselineAligned="false"
+        android:gravity="fill"
+        android:orientation="horizontal">
+        <TextView
+                android:id="@+id/my_banker_class"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="22sp" />
+        <TextView
+                android:id="@+id/my_banker"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="22sp" />
+        <TextView
+                android:id="@+id/my_player_score"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:textSize="22sp" />
+    </LinearLayout>
+</LinearLayout>
