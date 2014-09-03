@@ -2,10 +2,15 @@ com.formum.duizhu
 com.formum.duizhu.cardDeck
 com.formum.duizhu.cardDeck.card
 com.formum.duizhu.cardDeck.cardMaker
+com.formum.duizhu.data
+com.formum.duizhu.email
 com.formum.duizhu.gameRule
+com.formum.duizhu.humanCardsControler
 com.formum.duizhu.player
 com.formum.duizhu.player.AIStrategy
 com.formum.duizhu.player.playerCardDeck
 com.formum.duizhu.player.powerCardsBag
 com.formum.duizhu.recorder
+com.formum.duizhu.robotCardsControler
+com.formum.duizhu.soundplay
 com.formum.duizhu.util
